@@ -17,11 +17,11 @@ Download and Unzip:
 https://github.com/Nesci28/OutlandsShop-scripts/archive/refs/heads/master.zip
 
 Open a CommandLine:
-cd (UNZIP_FOLDER) && npm i --omit=dev
+cd <UNZIP_FOLDER> && npm i --omit=dev
 
 ### Run the NodeJS Script
 
 Open a CommandLine as Administrator (this is necessary because the UO Log file is locked by ClassicUO while the application is running).
-cd (UNZIP_FOLDER)
-node app.js -h 1 -d (CLASSIC_UO_JOURNAL_LOGS_FOLDER)
+cd <UNZIP_FOLDER>
+node app.js -h 1 -d <CLASSIC_UO_JOURNAL_LOGS_FOLDER>
 ex: node app.js -h 1 -d "C:\Program Files (x86)\Ultima Online Outlands\ClassicUO\Data\Client\JournalLogs"
