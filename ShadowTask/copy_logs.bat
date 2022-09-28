@@ -1,1 +1,0 @@
-xcopy /s "A:Program Files (x86)\Ultima Online Outlands\ClassicUO\Data\Client\JournalLogs" "./logs"
