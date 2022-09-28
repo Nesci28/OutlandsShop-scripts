@@ -27,6 +27,11 @@ class DateUtil {
     const toDate = momentDate.toDate();
     return toDate;
   }
+
+  static getTimestamp() {
+    const now = moment().format("YYYY-MM-DD hh:mm:ss a");
+    return now;
+  }
 }
 
 module.exports = DateUtil;
