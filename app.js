@@ -28,7 +28,6 @@ async function main(directory, hours) {
 
   try {
     const res = await axios.post(url, formData);
-<<<<<<< HEAD
     if (res.data && res.data.value) {
       console.log(
         `[${DateUtil.getTimestamp()}] - success: ${
@@ -41,15 +40,6 @@ async function main(directory, hours) {
     }
   } catch (err) {
     console.log(err);
-=======
-    console.log(
-      `[${DateUtil.getTimestamp()}] - success: ${res.data.isSuccess} - items: ${
-        res.data.value.length
-      }`,
-    );
-    console.log(`[${DateUtil.getTimestamp()}] - waiting for ${hours} hours`);
-  } catch (err) {
->>>>>>> f9c1f5332972ff4e26e8c509aeea760002b56453
     console.log("err :>> ", err.response.data.error.message);
   }
 }
@@ -68,11 +58,7 @@ const cronExpression = cronTime.every(+hours).hours();
 
 (async () => {
   console.log(`[${DateUtil.getTimestamp()}] - script is running`);
-<<<<<<< HEAD
   await main(directory, hours);
-=======
-  await main(directory);
->>>>>>> f9c1f5332972ff4e26e8c509aeea760002b56453
 })();
 
 cron.schedule(cronExpression, async () => {
